@@ -21,7 +21,7 @@ class TablesSessionsController {
                     throw new AppError("this table is already open")
                 }
 
-                return response.json(session)
+               
 
                 await knex<TablesSessionsRepository>("tables_sessions").insert({
                     table_id,
